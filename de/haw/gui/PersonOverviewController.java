@@ -1,5 +1,7 @@
 package de.haw.gui;
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -25,6 +27,11 @@ public class PersonOverviewController {
 	private Label cityLabel;
 	@FXML
 	private Label birthdayLabel;
+	
+	@FXML
+	private TextField filterTextField;
+	@FXML
+	private Button addFilterButton;
 
 	// Reference to the main application
 	private MainApp mainApp;
@@ -61,6 +68,24 @@ public class PersonOverviewController {
 		personTable.setItems(mainApp.getPersonData());
 	}
 
+	public void handleFilter() {
+		String filterString = filterTextField.getText();
+		 ObservableList<Person> personData = FXCollections.observableArrayList();
+
+        personData = showMockUpData(filterString);
+        //personData = Controller.getDataByFilter(filterString);
+        mainApp.setPersonData(personData);
+        mainApp.showPersonOverview();
+	}
+	
+	 private ObservableList<Person> showMockUpData(String searchString) {
+	        ObservableList<Person> personData = FXCollections.observableArrayList();
+	        personData.add(new Person("Ruth", "Mueller"));
+	        personData.add(new Person("Cornelia", "Meier"));
+	        personData.add(new Person("Lydia", "Kunz"));
+	        personData.add(new Person("Anna", "Best"));
+	        return personData;
+	    }
 
 
 }

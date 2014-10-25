@@ -10,14 +10,14 @@
    <top>
       <Pane prefHeight="92.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Cool Product Name">
+            <Label layoutX="17.0" layoutY="8.0" text="Cool Product Name">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="newSearchButton" layoutX="501.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleNewSearch" prefHeight="25.0" prefWidth="97.0" text="New Search" />
-            <TextField fx:id="searchStringField" layoutX="4.0" layoutY="35.0" prefHeight="25.0" prefWidth="494.0" promptText="Search ..." />
-            <Label layoutX="14.0" layoutY="67.0" text="Dont't know what to ask? Help" />
+            <Button fx:id="newSearchButton" layoutX="516.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleNewSearch" prefHeight="25.0" prefWidth="70.0" text="Search" />
+            <TextField fx:id="searchStringField" layoutX="14.0" layoutY="35.0" prefHeight="25.0" prefWidth="480.0" promptText="Search ..." />
+            <Label layoutX="17.0" layoutY="70.0" text="Dont't know what to ask? Help" />
          </children>
       </Pane>
    </top>
