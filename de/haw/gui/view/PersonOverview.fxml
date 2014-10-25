@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import jfxtras.labs.scene.control.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="de.haw.gui.PersonOverviewController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <SplitPane focusTraversable="true" prefHeight="285.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <TableView fx:id="personTable" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="false" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+              <columns>
+                <TableColumn fx:id="firstNameColumn" maxWidth="5000.0" minWidth="10.0" prefWidth="147.0" text="First Name" />
+                <TableColumn fx:id="lastNameColumn" maxWidth="5000.0" minWidth="10.0" prefWidth="148.0" text="Last Name" />
+                        <TableColumn prefWidth="141.0" text="Language" />
+                        <TableColumn prefWidth="141.0" text="Birthday" />
+              </columns>
+            </TableView>
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
