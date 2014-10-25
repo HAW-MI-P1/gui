@@ -6,9 +6,6 @@ import javafx.collections.ObservableList;
 
 import java.util.List;
 
-/**
- * Created by Fenja on 25.10.2014.
- */
 public class Controller {
 
     public ObservableList<Person> getDataBySearchString (String searchString){

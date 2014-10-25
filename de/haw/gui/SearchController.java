@@ -7,9 +7,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-/**
- * Created by Fenja on 25.10.2014.
- */
 public class SearchController {
 
     @FXML

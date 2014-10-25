@@ -5,11 +5,6 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import de.haw.gui.model.Person;
 
-/**
- * The controller for the overview with address table and details view.
- * 
- * @author Marco Jakob
- */
 public class PersonOverviewController {
 	@FXML
 	private TableView<Person> personTable;
